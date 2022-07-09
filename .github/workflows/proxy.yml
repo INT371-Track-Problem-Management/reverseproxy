@@ -19,5 +19,5 @@ jobs:
           script: |
             cd reverseproxy
             git pull origin main
-            sudo docker rm -f reverse-proxy
-            sudo docker-compose up -d
+            docker rm -f reverse-proxy
+            docker-compose up -d
